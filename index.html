@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+   <div class="container my-5">
+       <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Add Data</h4>
+                </div>
+                <div class="card-body">
+                    <div id="msg"></div>
+                    <form id="formData">
+                        <div class="input-group mb-3">
+                            <input type="text" name="name" id="uname"  class="form-control" placeholder="Name">
+                           
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" name="email" id="uemail" class="form-control" placeholder="email">
+                        </div>
+                        <input type="submit" class="btn btn-primary w-100" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-10">
+           <div class="card shadow">
+               <div class="card-header">
+                   <h4>Add Form</h4>
+               </div>
+               <div class="card-body text-center">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>SL</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="datalist">
+                        <!-- <tr>
+                            <td>${ index + 1 }</td>
+                            <td>${ name }</td>
+                            <td>${ email }</td>
+                            <td>
+                                <button class="btn btn-info btn-sm"><i class="fa fa-eye"></i></button>
+                                <button class="btn btn-warning btn-sm"><i class="fa fa-edit"></i></button>
+                                <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+               </div>
+           </div>
+        </div>
+       </div>
+   </div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
